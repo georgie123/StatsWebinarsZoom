@@ -1,0 +1,3 @@
+test = "igo"
+
+print(test)
