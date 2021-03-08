@@ -42,7 +42,7 @@ df = pd.read_csv(inputExcelFile, sep=',',
                             ])
 
 
-# REMOVE ADMIN
+# REMOVE ADMIN AND TEAM
 index_drop1 = df[df['Email'].apply(lambda x: x.endswith('@informa.com'))].index
 df = df.drop(index_drop1)
 index_drop2 = df[df['Email'].apply(lambda x: x.endswith('@euromedicom.com'))].index
