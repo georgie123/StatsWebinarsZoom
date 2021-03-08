@@ -55,6 +55,18 @@ index_drop5 = df[df['Email'].apply(lambda x: x.endswith('@ce.com.co'))].index
 df = df.drop(index_drop5)
 index_drop6 = df[df['Email'].apply(lambda x: x == ('max.carter11@yahoo.com'))].index
 df = df.drop(index_drop6)
+index_drop7 = df[df['Email'].apply(lambda x: x == ('eo-wilson@biodiv.us'))].index
+df = df.drop(index_drop7)
+index_drop8 = df[df['Email'].apply(lambda x: x == ('cartoperso@yahoo.fr'))].index
+df = df.drop(index_drop8)
+index_drop9 = df[df['Email'].apply(lambda x: x == ('georges.hinot@gmail.com'))].index
+df = df.drop(index_drop9)
+index_drop10 = df[df['Email'].apply(lambda x: x == ('hakimislim@yahoo.fr'))].index
+df = df.drop(index_drop10)
+index_drop11 = df[df['Email'].apply(lambda x: x == ('salimsanslea@ymail.com'))].index
+df = df.drop(index_drop11)
+index_drop12 = df[df['Email'].apply(lambda x: x == ('salimsanslea@hotmail.com'))].index
+df = df.drop(index_drop12)
 
 
 # ATTENDED YES, BEFORE DEDUPE
