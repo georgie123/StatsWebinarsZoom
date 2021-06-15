@@ -27,7 +27,7 @@ inputCountryConversion = r'C:/Users/Georges/PycharmProjects/data/countries_conve
 
 workDirectory = r'C:/Users/Georges/Downloads/Webinar/'
 
-WebinarFileName = '20210225_Webinar_HpvAssays_Arbyn'
+WebinarFileName = '20210519_Webinar_HostCellDna_SteenbergenHeideman'
 
 ReportExcelFile = workDirectory + WebinarFileName + '_Report.xlsx'
 NewAddThenDeleteExcelFile = workDirectory + WebinarFileName + '_NewAddJooThenDelete.xlsx'
@@ -37,8 +37,8 @@ NewCollectExcelFile = workDirectory + WebinarFileName + '_NewToCollect.xlsx'
 # WEBINAR EXCEL IMPORT
 inputExcelFile = workDirectory+WebinarFileName+'.csv'
 df = pd.read_csv(inputExcelFile, sep=',',
-                   usecols=['Attended', 'First Name', 'Last Name', 'Email', 'Phone', 'Specialty',
-                            'City', 'Country/Region Name'
+                   usecols=['Attended', 'First Name', 'Last Name', 'Email', 'Specialty',
+                            'Country/Region Name'
                             ])
 
 
@@ -290,7 +290,7 @@ colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
 fig1 = plt.figure(figsize=(8, 5))
 plt.pie(participantValue, labels=participantLabel, colors=colors, explode=[0.02, 0.02], autopct='%1.2f%%', shadow=False, startangle=90)
 plt.axis('equal')
-plt.title('Attendance', pad=20, fontsize=15)
+plt.title('Attendance ('+str(attended)+')', pad=20, fontsize=15)
 
 # Footer
 plt.figtext(0.2, 0.10, WebinarFileName.replace('_', ' '), ha="left", fontsize=13, weight='bold')
