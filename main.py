@@ -27,7 +27,7 @@ inputCountryConversion = r'C:/Users/Georges/PycharmProjects/data/countries_conve
 
 workDirectory = r'C:/Users/Georges/Downloads/Webinar/'
 
-WebinarFileName = '20210519_Webinar_HostCellDna_SteenbergenHeideman'
+WebinarFileName = '20210720_Webinar_TheImpactTrial_Pelagio'
 
 ReportExcelFile = workDirectory + WebinarFileName + '_Report.xlsx'
 NewAddThenDeleteExcelFile = workDirectory + WebinarFileName + '_NewAddJooThenDelete.xlsx'
